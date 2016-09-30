@@ -17,21 +17,6 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Helper {
 
-    public static void mensaje(Component ventana, String mensaje, int tipo) {
-        switch (tipo) {
-            case 1:
-                JOptionPane.showMessageDialog(ventana, mensaje, "Información", JOptionPane.INFORMATION_MESSAGE);
-                break;
-            case 2:
-                JOptionPane.showMessageDialog(ventana, mensaje, "Advertencia", JOptionPane.WARNING_MESSAGE);
-                break;
-            case 3:
-                JOptionPane.showMessageDialog(ventana, mensaje, "Error", JOptionPane.ERROR_MESSAGE);
-                break;
-
-        }
-    }
-
     public static void limpiadoTabla(JTable tabla1) {
         int nf, nc;
         nc = tabla1.getColumnCount();
